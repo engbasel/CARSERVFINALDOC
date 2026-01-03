@@ -18,7 +18,7 @@
 | المنصة | التقنية | الوصف |
 |--------|---------|-------|
 | **تطبيق الموبايل** | Flutter 3.9.2 | التطبيق الرئيسي للعملاء (Android & iOS) |
-| **لوحة التحكم** | React + Vite | لوحة تحكم إدارية عبر الويب |
+| **لوحة التحكم** | Flutter | لوحة تحكم إدارية (Desktop/Web) |
 | **Backend** | Firebase Suite | خدمات الخلفية الكاملة |
 | **AI Services** | Python Flask | خدمات الذكاء الاصطناعي |
 | **State Management** | flutter_bloc (BLoC Pattern) | إدارة الحالة في التطبيق |
@@ -466,52 +466,6 @@ Text(S.of(context)!.loginButton)  // يعرض "تسجيل الدخول" أو "LO
 
 **راجع:** `LOCALIZATION_GUIDE.md` لتفاصيل أكثر عن نظام الترجمة
 
----
-
-## 📱 شاشات التطبيق
-
-### البنية الأساسية
-
-```
-MainScreen (Bottom Navigation)
-├── Home (الرئيسية)
-│   ├── Search Bar
-│   ├── Special Offers
-│   ├── Categories
-│   └── Popular Services
-│
-├── My Car (سيارتي)
-│   ├── Car Info
-│   ├── 3D Model Viewer
-│   ├── Color Visualizer
-│   └── Maintenance Button
-│       └── AI Prediction
-│
-├── Bookings (الحجوزات)
-│   ├── Upcoming Bookings
-│   ├── Past Bookings
-│   └── Add New Booking
-│
-└── Menu (القائمة)
-    ├── Profile
-    ├── Settings
-    │   ├── Languages
-    │   ├── Theme
-    │   └── Notifications
-    ├── Change Email
-    ├── Change Password
-    └── Logout
-```
-
-**إضافات خارج البنية:**
-- Emergency Assistance (المساعدة الطارئة)
-- ChatBot (المساعد الذكي)
-- Notifications (الإشعارات)
-- Search (البحث)
-- Service Details (تفاصيل الخدمة)
-- Category Services (خدمات الفئة)
-
----
 
 ## 🗂️ هيكل المشروع (Project Structure)
 
@@ -961,3 +915,4 @@ Firestore/
 - ✅ BLoC Pattern في كل المشروع
 
 ---
+
